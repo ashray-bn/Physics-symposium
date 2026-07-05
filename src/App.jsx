@@ -98,3 +98,29 @@ export default function App() {
               <button
                 className="w-full text-left font-semibold"
                 onClick={() => setOpen(open === i ? null : i)}
+                >
+                {f.q}
+              </button>
+              {open === i && <p className="mt-2 text-gray-700">{f.a}</p>}
+            </div>
+          ))}
+        </div>
+      </section>
+      <section id="register" className="py-16 max-w-md mx-auto px-4">
+        <h2 className="text-3xl font-bold text-center mb-6">Register</h2>
+        <form className="space-y-4">
+          <input className="w-full border p-2" placeholder="Name" />
+          <input className="w-full border p-2" placeholder="Email" />
+          <input className="w-full border p-2" placeholder="Year / Branch" />
+          <button className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700">
+            Submit
+          </button>
+        </form>
+      </section>
+      <footer className="py-6 text-center bg-gray-900 text-white">
+        <p>Contact: spectrum@hyderabad.bits-pilani.ac.in</p>
+        <p className="text-sm mt-2">© 2026 Physics Symposium</p>
+      </footer>
+    </>
+  )
+}
